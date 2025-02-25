@@ -37,7 +37,7 @@ nav #nav-bar-logo {
 }
 
 nav #nav-bar-logo .navBarElemento {
-    font-size: 12px;
+    font-size: 13px;
     color: hsl(219, 9%, 45%);
     cursor: pointer;
     position: relative;
@@ -72,7 +72,7 @@ nav .navBarElemento::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -38px;
+    bottom: -43px;
     
     width: 0;
     height: 3px;
@@ -241,7 +241,7 @@ nav .navBarElemento:hover::after {
 main {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     gap: 40px;
     margin-inline: 160px;
