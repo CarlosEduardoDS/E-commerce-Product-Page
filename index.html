@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/scripts.js" defer></script>
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+  <nav>
+    <div id="nav-bar-logo">
+      <button id="botao-nav-bar"><img src="images/icon-menu.svg" alt="menu-navbar"></button>
+      <div id="overlay">
+        <div id="pop-up">
+          <button id="fecha-pop-up"><img src="images/icon-close.svg" alt="close"></button>
+          <div id="nav-bar-pop-up">
+            <p class="navBarElementoPopUp">Collections</p>
+            <p class="navBarElementoPopUp">Men</p>
+            <p class="navBarElementoPopUp">Women</p>
+            <p class="navBarElementoPopUp">About</p>
+            <p class="navBarElementoPopUp">Contact</p>
+          </div>
+        </div>
+      </div>
+      <img id="logo" src="images/logo.svg" alt="logo">
+      <p class="navBarElemento">Collections</p>
+      <p class="navBarElemento">Men</p>
+      <p class="navBarElemento">Women</p>
+      <p class="navBarElemento">About</p>
+      <p class="navBarElemento">Contact</p>
+    </div>
+    <div id="nav-bar-icons">
+      <div id="carrinho-notificacao">
+        <button id="botao-carrinho">
+          <img src="images/icon-cart.svg" alt="icon-cart">
+        </button>
+        <span id="notificao-quantidade"></span>
+      </div>
+
+      <img id="icon-image" src="images/image-avatar.png" alt="image-avatar">
+    </div>
+    <div id="overlay-carrinho">
+      <div id="carrinho-aberto">
+        <h5>Cart</h5>
+        <div id="conteudo">
+          <p id="carrinho-vazio">
+            Your cart is empty.
+          </p>
+          <div id="produto-no-carrinho">
+            <img id="img-no-carrrinho" src="images/image-product-1-thumbnail.jpg" alt="image-product">
+            <div>
+              <p>Fall Limited Edition Sneakers</p>
+              <p>$125.00 x <span id="quant-produtos-no-carrinho"></span><span id="valor-final"></span></p>
+            </div>
+            <button id="botao-delete">
+              <img src="images/icon-delete.svg" alt="delete">
+            </button>
+            <button id="finalizar-compra">
+              <p>Checkout</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section id="imagens">
+      <div id="imagem-principal-container">
+        <img id="imagem-principal" src="images/image-product-1.jpg" alt="imagem-principal">
+      </div>
+      <div id="imagens-secundarias">
+        <div id="primeira-img" class="imagensSecundarias">
+          <img class="imagemSelecionada" src="images/image-product-1-thumbnail.jpg" alt="image1">
+        </div>
+        <div id="segunda-img" class="imagensSecundarias">
+          <img src="images/image-product-2-thumbnail.jpg" alt="image2">
+        </div>
+        <div id="terceira-img" class="imagensSecundarias">
+          <img src="images/image-product-3-thumbnail.jpg" alt="image3">
+        </div>
+        <div id="quarta-img" class="imagensSecundarias">
+          <img src="images/image-product-4-thumbnail.jpg" alt="image4">
+        </div>
+      </div>
+    </section>
+    <div id="imagens-responsivo">
+      <button id="previous-responsivo" class="btnPreviousNextResponsivo">
+        <img class="previousNextResponsivo" src="images/icon-previous.svg" alt="previous">
+      </button>
+      <img id="img-principal-responsivo" src="images/image-product-1.jpg" alt="">
+      <button id="next-responsivo" class="btnPreviousNextResponsivo">
+        <img class="previousNextResponsivo" src="images/icon-next.svg" alt="next">
+      </button>
+    </div>
+    <div id="overlay-imagens">
+      <div id="pop-up-carrossel-imagens">
+        <div id="close-pop-up">
+          <button id="btn-close-pop-up">
+            <img src="images/icon-close.svg" alt="close">
+          </button>
+        </div>
+        <div id="imagem-principal-btn-pop-up">
+          <button id="btn-previous" class="btnPreviousNext">
+            <img src="images/icon-previous.svg" alt="icon-previous">
+          </button>
+          <img id="img-pop-up" src="images/image-product-1.jpg" alt="imagem-principal">
+          <button id="btn-next" class="btnPreviousNext">
+            <img src="images/icon-next.svg" alt="icon-next">
+          </button>
+        </div>
+        <div id="imagens-secundarias-pop-up">
+          <div class="imagensSecundariasPopUpContainer">
+            <img id="primeira-img-pop-up" class="imagensSecundariasPopUp imagemSelecionadaPopUp" src="images/image-product-1-thumbnail.jpg" alt="image1">
+          </div>
+          <div  class="imagensSecundariasPopUpContainer">
+            <img id="segunda-img-pop-up" class="imagensSecundariasPopUp" src="images/image-product-2-thumbnail.jpg" alt="image2">
+          </div>
+          <div  class="imagensSecundariasPopUpContainer">
+            <img id="terceira-img-pop-up" class="imagensSecundariasPopUp" src="images/image-product-3-thumbnail.jpg" alt="image3">
+          </div>
+          <div  class="imagensSecundariasPopUpContainer">
+          <img id="quarta-img-pop-up" class="imagensSecundariasPopUp" src="images/image-product-4-thumbnail.jpg" alt="image4">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="overlay-imagens-segunda"></div>
+    <section id="descricao">
+      <h4>
+        Sneaker Company
+      </h4>
+      <h2>
+        Fall Limited Edition Sneakers
+      </h2>
+      <p id="descricao-produto">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+
+      <div id="preco">
+        <div id="preco-atual-desconto">
+          <p id="preco-atual">$125.00</p>
+          <div id="desconto">
+            <p>50%</p>
+          </div>
+        </div>
+        <p id="preco-antigo">$250.00</p>
+      </div>
+      <div id="comprar-itens">
+        <div id="quantidade">
+          <button id="botao-menos">
+            <img src="images/icon-minus.svg" alt="minus">
+          </button>
+          <p id="display-quant">0</p>
+          <button id="botao-mais">
+            <img src="images/icon-plus.svg" alt="plus">
+          </button>
+        </div>
+        <button id="botao-comprar">
+          <img src="images/icon-cart.svg" alt="icon-cart">
+          <p>Add to cart</p>
+        </button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>All rights reserved <a href="https://github.com/CarlosEduardoDS" target="_blank">Carlos Eduardo da Silva</a></p>
+  </footer>
+</body>
+
+</html>
